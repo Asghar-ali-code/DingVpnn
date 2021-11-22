@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="15dp"
+        android:background="@color/serverbackground"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/iv_country">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_country"
+            android:text="Country"
+            android:id="@+id/tvcountryName"
+            android:textColor="@color/white"
+            android:fontFamily="@font/oxygen_regular"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp" />
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:button="@drawable/server_sample_checked"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/iv_checked">
+        </CheckBox>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/iv_checked"
+            android:src="@drawable/strong_signal"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/ivsignal">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7%"
+            android:id="@+id/tv_progress"
+            android:textColor="@color/progrsscolor"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/oxygen_regular"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/ivsignal"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

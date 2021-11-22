@@ -4,6 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainColor"
     tools:context=".Activities.HomeActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen_regular"
+        android:text="Ding"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/OrangeDark"
+       android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

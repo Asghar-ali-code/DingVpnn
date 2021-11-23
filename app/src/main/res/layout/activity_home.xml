@@ -7,29 +7,16 @@
     android:background="@color/mainColor"
     tools:context=".Activities.HomeActivity">
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/tvTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:fontFamily="@font/oxygen_regular"
-        android:text="Ding"
-        android:textColor="@color/OrangeDark"
-        android:textSize="@dimen/_16sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="30sp"
+        android:src="@drawable/ding_vpn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:fontFamily="@font/oxygen_regular"
-        android:text="Vpn"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_16sdp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvTop"
-        app:layout_constraintStart_toEndOf="@+id/tvTop"
-        app:layout_constraintTop_toTopOf="@+id/tvTop" />
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
@@ -45,11 +32,12 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

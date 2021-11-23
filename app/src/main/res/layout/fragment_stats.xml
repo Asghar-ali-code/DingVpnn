@@ -44,6 +44,7 @@
         android:drawableTop="@drawable/upload_icon_two"
         android:fontFamily="@font/oxygen_regular"
         android:text="2Mb"
+        android:gravity="center"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/download"
         app:layout_constraintEnd_toEndOf="parent"

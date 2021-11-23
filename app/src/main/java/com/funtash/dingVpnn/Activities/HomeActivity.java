@@ -28,7 +28,7 @@ ViewPager viewPager;
         super.onCreate(savedInstanceState);
         binding= ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        fontColor();
+
         viewPager=binding.viewPager;
         tableLayout=binding.tabLayout;
          homeAdapter = new HomeAdapter(getSupportFragmentManager());
@@ -38,16 +38,6 @@ ViewPager viewPager;
 
     }
 
-    private void fontColor() {
-        TextPaint paint = binding.tvTop.getPaint();
-        float width = paint.measureText("Di, ng");
 
-        Shader textShader = new LinearGradient(0, 0, width, binding.tvTop.getTextSize(),
-                new int[]{
-                        Color.parseColor("#db4e2d"),
-                        Color.parseColor("#3d0903"),
-                }, null, Shader.TileMode.CLAMP);
-        binding.tvTop.getPaint().setShader(textShader);
-    }
 
 }

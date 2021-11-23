@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.funtash.dingVpnn.R;
 import com.funtash.dingVpnn.databinding.ActivityMainBinding;
@@ -15,6 +16,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.button.setOnClickListener(view -> {startActivity(new Intent(this,HomeActivity.class));});
+        Handler handler=new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(MainActivity.this,HomeActivity.class));
+                finish();
+
+            }
+        },2000);
+
+
     }
 }

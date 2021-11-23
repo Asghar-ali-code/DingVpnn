@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/mainColor"
+
     android:layout_height="match_parent"
+    android:background="@color/mainColor"
     tools:context=".Fragments.OptionFragment">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -72,15 +73,15 @@
             android:id="@+id/ivproxy" />
 
         <TextView
+            android:id="@+id/tvproxy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/ivproxy"
             android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/ivproxy"
+            android:fontFamily="@font/oxygen_regular"
             android:text="Proxy Settings"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            android:fontFamily="@font/oxygen_regular"
-            android:id="@+id/tvproxy" />
+            android:textSize="18sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -263,6 +264,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
+
 
 
 

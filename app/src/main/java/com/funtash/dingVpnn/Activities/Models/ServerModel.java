@@ -1,37 +1,61 @@
 package com.funtash.dingVpnn.Activities.Models;
 
 public class ServerModel {
-    String countryImage,countryName,progress;
+        private String country;
+        private String flagUrl;
+        private String ovpn;
+        private String ovpnUserName;
+        private String ovpnUserPassword;
 
-    public ServerModel(String countryImage, String countryName, String progress) {
-        this.countryImage = countryImage;
-        this.countryName = countryName;
-        this.progress = progress;
-    }
 
-    public ServerModel() {
-    }
+        public ServerModel() {
+        }
+        public ServerModel(String country, String flagUrl, String ovpn, String ovpnUserName, String ovpnUserPassword) {
+            this.country = country;
+            this.flagUrl = flagUrl;
+            this.ovpn = ovpn;
+            this.ovpnUserName = ovpnUserName;
+            this.ovpnUserPassword = ovpnUserPassword;
+        }
 
-    public String getCountryImage() {
-        return countryImage;
-    }
-    public void setCountryImage(String countryImage) {
-        this.countryImage = countryImage;
-    }
 
-    public String getCountryName() {
-        return countryName;
-    }
+    public String getCountry() {
+            return country;
+        }
 
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
-    }
+        public void setCountry(String country) {
+            this.country = country;
+        }
 
-    public String getProgress() {
-        return progress;
-    }
+        public String getFlagUrl() {
+            return flagUrl;
+        }
 
-    public void setProgress(String progress) {
-        this.progress = progress;
+        public void setFlagUrl(String flagUrl) {
+            this.flagUrl = flagUrl;
+        }
+
+        public String getOvpn() {
+            return ovpn;
+        }
+
+        public void setOvpn(String ovpn) {
+            this.ovpn = ovpn;
+        }
+
+        public String getOvpnUserName() {
+            return ovpnUserName;
+        }
+
+        public void setOvpnUserName(String ovpnUserName) {
+            this.ovpnUserName = ovpnUserName;
+        }
+
+        public String getOvpnUserPassword() {
+            return ovpnUserPassword;
+        }
+
+        public void setOvpnUserPassword(String ovpnUserPassword) {
+            this.ovpnUserPassword = ovpnUserPassword;
+        }
     }
-}

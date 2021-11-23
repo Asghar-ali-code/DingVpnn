@@ -1,6 +1,7 @@
 package com.funtash.dingVpnn.Activities.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.funtash.dingVpnn.Activities.Models.ServerModel;
+import com.funtash.dingVpnn.Activities.Settings;
 import com.funtash.dingVpnn.R;
 
 import java.util.ArrayList;
@@ -38,10 +40,15 @@ public class ServerAdapter extends RecyclerView.Adapter<ServerAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull  ServerAdapter.ViewHolder holder, int position) {
         ServerModel model=list.get(position);
-        Glide.with(context).load(model.getCountryImage()).into(holder.countryImage);
-        holder.countryName.setText(model.getCountryName());
-        holder.Progress.setText(model.getProgress());
-        
+        Glide.with(context).load(model.getFlagUrl()).into(holder.countryImage);
+        holder.countryName.setText(model.getCountry());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(context, Settings.class));
+            }
+        });
+
 
     }
 
@@ -55,13 +62,12 @@ public class ServerAdapter extends RecyclerView.Adapter<ServerAdapter.ViewHolder
     }
     class ViewHolder extends RecyclerView.ViewHolder {
         ImageView countryImage;
-        TextView countryName,Progress;
+        TextView countryName;
         CheckBox checkBox;
         public ViewHolder(@NonNull  View itemView) {
             super(itemView);
             countryImage=itemView.findViewById(R.id.iv_country);
             countryName=itemView.findViewById(R.id.tvcountryName);
-            Progress=itemView.findViewById(R.id.tv_progress);
             checkBox=itemView.findViewById(R.id.iv_checked);
         }
     }

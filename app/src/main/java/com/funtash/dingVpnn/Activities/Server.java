@@ -29,9 +29,9 @@ public class Server extends AppCompatActivity {
         layoutManager=new LinearLayoutManager(this);
         binding.serverRecycler.setLayoutManager(layoutManager);
        model=new ServerModel();
-       list.add(new ServerModel("","Uganda","6%"));
-       list.add(new ServerModel("","pakistan","7%"));
        adapter=new ServerAdapter(this,list);
+       list.add(new ServerModel("Pakistan","","","",""));
+       list.add(new ServerModel("India","","","",""));
        binding.serverRecycler.setAdapter(adapter);
        adapter.notifyDataSetChanged();
 

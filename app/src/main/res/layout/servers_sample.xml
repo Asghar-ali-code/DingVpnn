@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:elevation="15dp"
         android:background="@color/serverbackground"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -54,17 +53,6 @@
             android:id="@+id/ivsignal">
         </ImageView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="7%"
-            android:id="@+id/tv_progress"
-            android:textColor="@color/progrsscolor"
-            android:layout_marginEnd="30dp"
-            android:fontFamily="@font/oxygen_regular"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@id/ivsignal"
-            android:textSize="18sp" />
 
 
     </RelativeLayout>

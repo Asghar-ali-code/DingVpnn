@@ -1,14 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.SpeedTestFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/view"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp">
 
-</FrameLayout>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivdwnld"
+                android:layout_centerVertical="true"
+                android:src="@drawable/download_icon_three" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivdwnld"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Download"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvdwnld" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ivdwnld"
+                android:layout_marginStart="10dp"
+                android:text="15.4"
+                android:layout_below="@id/tvdwnld"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/oxygen_regular"
+                android:id="@+id/tvdwnldSpeed" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvdwnldSpeed"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text="Mbps"
+                android:layout_below="@id/tvdwnld"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/oxygen_regular"
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/view"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivupload"
+                android:layout_centerVertical="true"
+                android:src="@drawable/upload_icon_three" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ivupload"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Upload"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/oxygen_regular"
+                android:id="@+id/tvupload" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ivupload"
+                android:layout_marginStart="10dp"
+                android:text="11.9"
+                android:layout_below="@id/tvupload"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/oxygen_regular"
+                android:id="@+id/tvuploadSpeed" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvuploadSpeed"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text="Mbps"
+                android:layout_below="@id/tvupload"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/oxygen_regular"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

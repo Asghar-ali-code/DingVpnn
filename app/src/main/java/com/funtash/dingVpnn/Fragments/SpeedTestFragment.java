@@ -25,6 +25,7 @@ public class SpeedTestFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         binding=FragmentSpeedTestBinding.inflate(
                 getActivity().getLayoutInflater(), container, false);
         view= binding.getRoot();

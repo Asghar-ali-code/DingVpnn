@@ -20,12 +20,13 @@ public class OptionFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding=FragmentOptionBinding.inflate(getLayoutInflater(), container, false);
+        binding=FragmentOptionBinding.inflate(getLayoutInflater(),container, false);
+        view= inflater.inflate(R.layout.fragment_option, container, false);
         view=binding.getRoot();
         // Inflate the layout for this fragment
         return view;

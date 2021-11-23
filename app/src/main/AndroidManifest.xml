@@ -10,12 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
         <activity android:name=".Activities.Settings"></activity>
-        <activity android:name=".Activities.MainActivity" />
+
         <activity
             android:name=".Activities.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".Activities.Server"
+        android:name=".Activities.Server"
+        android:exported="true"/>
+        <activity
+            android:name=".Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

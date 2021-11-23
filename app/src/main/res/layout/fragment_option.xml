@@ -2,8 +2,268 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainColor"
     android:layout_height="match_parent"
     tools:context=".Fragments.OptionFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Rl_split"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/split_tunnig"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+            android:id="@+id/ivsplit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivsplit"
+            android:layout_marginStart="10dp"
+            android:text="Spit Tunneling"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvspit" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivsplit"
+            android:layout_below="@id/tvspit"
+            android:layout_marginStart="10dp"
+            android:text="Enable or disable apps"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvspitdetails" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/forward_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Rl_proxy"
+        app:layout_constraintTop_toBottomOf="@id/Rl_split">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/proxy_setting_icon"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+            android:id="@+id/ivproxy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivproxy"
+            android:layout_marginStart="10dp"
+            android:text="Proxy Settings"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvproxy" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivproxy"
+            android:layout_below="@id/tvproxy"
+            android:layout_marginStart="10dp"
+            android:text="No Proxy"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvproxydetails" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/forward_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Rl_language"
+        app:layout_constraintTop_toBottomOf="@id/Rl_proxy">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/language_icon"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+            android:id="@+id/ivlanguage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivlanguage"
+            android:layout_marginStart="10dp"
+            android:text="Language"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvlanguage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivlanguage"
+            android:layout_below="@id/tvlanguage"
+            android:layout_marginStart="10dp"
+            android:text="English"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvlanguagedetails" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/forward_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Rl_feedback"
+        app:layout_constraintTop_toBottomOf="@id/Rl_language">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/feedback_icon"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+            android:id="@+id/ivfeedback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivfeedback"
+            android:layout_marginStart="10dp"
+            android:text="Feedback"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvfeedback" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Rl_rate"
+        app:layout_constraintTop_toBottomOf="@id/Rl_feedback">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/rate_us_icon"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+            android:id="@+id/ivrate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivrate"
+            android:layout_marginStart="10dp"
+            android:text="Rate us"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvrate" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Rl_about"
+        app:layout_constraintTop_toBottomOf="@id/Rl_rate">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/about_icon"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+            android:id="@+id/ivabout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivabout"
+            android:layout_marginStart="10dp"
+            android:text="About"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:id="@+id/tvabout" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/Rl_about"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/native_Adview"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
 
 
 

@@ -9,10 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.funtash.dingVpnn.R;
+import com.funtash.dingVpnn.databinding.FragmentSpeedTestBinding;
 
 
 public class SpeedTestFragment extends Fragment {
     View view;
+    FragmentSpeedTestBinding binding;
 
 
     @Override
@@ -23,7 +25,9 @@ public class SpeedTestFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view= inflater.inflate(R.layout.fragment_speed_test, container, false);
+        binding=FragmentSpeedTestBinding.inflate(
+                getActivity().getLayoutInflater(), container, false);
+        view= binding.getRoot();
         return view;
     }
 }

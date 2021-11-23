@@ -56,7 +56,7 @@
                 android:text="Mbps"
                 android:layout_below="@id/tvdwnld"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:fontFamily="@font/oxygen_regular"
                 />
 
@@ -72,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/view"
+            android:id="@+id/Rl_upload"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp">
 
@@ -113,12 +114,59 @@
                 android:text="Mbps"
                 android:layout_below="@id/tvupload"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:fontFamily="@font/oxygen_regular"
                 />
 
 
         </RelativeLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/Rl_upload"
+            android:src="@drawable/speedometer"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivspeedometer" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/Rl_upload"
+            android:src="@drawable/speedometer_needle"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivneedle" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivspeedometer"
+            android:layout_marginTop="50dp"
+            android:background="@color/serverbackground"
+            android:layout_marginStart="70dp"
+            android:text="Start"
+            android:id="@+id/btnstart"
+            android:textColor="@color/white"
+            android:fontFamily="@font/oxygen_regular"
+            android:layout_marginEnd="70dp">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/btnstart"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/native_Adview"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
 
 
 

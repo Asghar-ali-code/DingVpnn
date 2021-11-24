@@ -6,7 +6,12 @@
     android:background="@color/mainColor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.SpeedTestFragment">
-
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@id/native_Adview"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/scroolparent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -45,6 +50,7 @@
                 android:layout_below="@id/tvdwnld"
                 android:textColor="@color/white"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 android:fontFamily="@font/oxygen_regular"
                 android:id="@+id/tvdwnldSpeed" />
             <TextView
@@ -52,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/tvdwnldSpeed"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="5dp"
                 android:text="Mbps"
                 android:layout_below="@id/tvdwnld"
                 android:textColor="@color/white"
@@ -100,6 +106,7 @@
                 android:layout_toEndOf="@id/ivupload"
                 android:layout_marginStart="10dp"
                 android:text="11.9"
+                android:textStyle="bold"
                 android:layout_below="@id/tvupload"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -110,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/tvuploadSpeed"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="5dp"
                 android:text="Mbps"
                 android:layout_below="@id/tvupload"
                 android:textColor="@color/white"
@@ -135,6 +142,30 @@
             android:src="@drawable/speedometer_needle"
             android:layout_centerHorizontal="true"
             android:id="@+id/ivneedle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvspeed"
+            android:text="Mbps"
+            android:textSize="16sp"
+            android:fontFamily="@font/oxygen_regular"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivneedle"
+            android:text="15.39"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-70dp"
+            android:fontFamily="@font/oxygen_regular"
+            android:textColor="@color/OrangeDark"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvspeed" >
+
+
+        </TextView>
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -149,22 +180,7 @@
             android:layout_marginEnd="70dp">
         </androidx.appcompat.widget.AppCompatButton>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            android:layout_below="@id/btnstart"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:id="@+id/native_Adview"
-            android:orientation="vertical">
-            <FrameLayout
-                android:id="@+id/fl_adplaceholder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+
 
 
 
@@ -177,6 +193,23 @@
 
 
     </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroolparent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/native_Adview"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

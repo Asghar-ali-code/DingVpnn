@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.funtash.dingVpnn.Activities.MainActivity;
 import com.funtash.dingVpnn.Activities.Models.ServerModel;
 import com.funtash.dingVpnn.Activities.Settings;
 import com.funtash.dingVpnn.R;
@@ -46,6 +48,13 @@ public class ServerAdapter extends RecyclerView.Adapter<ServerAdapter.ViewHolder
             @Override
             public void onClick(View view) {
                 context.startActivity(new Intent(context, Settings.class));
+            }
+        });
+        holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                context.startActivity(new Intent(context, MainActivity.class));
+
             }
         });
 

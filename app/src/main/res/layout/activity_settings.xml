@@ -161,7 +161,10 @@
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
             android:background="@color/serverbackground" />
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -180,13 +183,18 @@
             android:text="Proxy server hostname or IP"
             android:textColor="@color/white"
             android:textSize="14sp" />
+</LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
             android:background="@color/serverbackground" />
-
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:id="@+id/ll_port">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -205,6 +213,7 @@
             android:text="Proxy server hostname or IP"
             android:textColor="@color/white"
             android:textSize="14sp" />
+       </LinearLayout>
 
         <View
             android:layout_width="match_parent"
@@ -238,7 +247,11 @@
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
             android:background="@color/serverbackground" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_username"
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -257,13 +270,18 @@
             android:text="Username for Proxy authentication"
             android:textColor="@color/white"
             android:textSize="14sp" />
+    </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
             android:background="@color/serverbackground" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_password"
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -282,13 +300,18 @@
             android:text="password for proxy authentication"
             android:textColor="@color/white"
             android:textSize="14sp" />
+    </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
             android:background="@color/serverbackground" />
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_domain"
+    android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -307,6 +330,7 @@
             android:text="Domain for proxy authentication"
             android:textColor="@color/white"
             android:textSize="14sp" />
+</LinearLayout>
 
     </LinearLayout>
 </ScrollView>

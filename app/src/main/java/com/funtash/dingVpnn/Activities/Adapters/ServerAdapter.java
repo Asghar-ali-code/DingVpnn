@@ -44,12 +44,6 @@ public class ServerAdapter extends RecyclerView.Adapter<ServerAdapter.ViewHolder
         ServerModel model=list.get(position);
         Glide.with(context).load(model.getFlagUrl()).into(holder.countryImage);
         holder.countryName.setText(model.getCountry());
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                context.startActivity(new Intent(context, Settings.class));
-            }
-        });
         holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

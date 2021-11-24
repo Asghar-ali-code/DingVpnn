@@ -25,9 +25,5 @@
     <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:fontFamily">@font/oxygen_regular</item>
     </style>
-    <style name="RadioButtonStyle" parent="Theme.AppCompat.Dialog">
-        <item name="colorControlNormal">@color/white</item>
-        <item name="colorAccent">@color/OrangeDark</item>
-        <item name="android:textColorSecondary">@color/black</item>
-    </style>
+
 </resources>

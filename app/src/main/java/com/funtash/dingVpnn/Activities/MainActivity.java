@@ -17,13 +17,10 @@ public class MainActivity extends AppCompatActivity {
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         Handler handler=new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(MainActivity.this,HomeActivity.class));
-                finish();
+        handler.postDelayed(() -> {
+            startActivity(new Intent(MainActivity.this,HomeActivity.class));
+            finish();
 
-            }
         },2000);
 
 

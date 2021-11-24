@@ -10,46 +10,78 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivDuration"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/duration_icon"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_12sdp"
-            android:drawableTop="@drawable/duration_icon"
             android:fontFamily="@font/oxygen_regular"
             android:text="01:23:21"
+            android:textSize="8sp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
             android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+          app:layout_constraintTop_toBottomOf="@+id/ivDuration"
+            app:layout_constraintStart_toStartOf="@+id/ivDuration"
+            app:layout_constraintEnd_toEndOf="@id/ivDuration"/>
+
+        <ImageView
+            android:id="@+id/ivdownload"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/download_icon_two"
+            app:layout_constraintTop_toTopOf="@id/ivDuration"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDuration"
+            app:layout_constraintStart_toEndOf="@id/ivDuration"
+            app:layout_constraintEnd_toStartOf="@id/ivUpload"
+        />
+
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/download"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_12sdp"
-            android:drawableTop="@drawable/download_icon_two"
             android:fontFamily="@font/oxygen_regular"
             android:text="21Mb"
+            android:gravity="center"
+            android:textSize="8sp"
+            android:layout_marginTop="@dimen/_3sdp"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/duration"
-            app:layout_constraintEnd_toStartOf="@+id/upload"
-            app:layout_constraintStart_toEndOf="@id/duration"
-            app:layout_constraintTop_toTopOf="@+id/duration" />
+            app:layout_constraintTop_toBottomOf="@+id/ivdownload"
+            app:layout_constraintStart_toStartOf="@+id/ivdownload"
+            app:layout_constraintEnd_toEndOf="@id/ivdownload"
+             />
+        <ImageView
+            android:id="@+id/ivUpload"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/upload_icon_two"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/upload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_12sdp"
-            android:drawableTop="@drawable/upload_icon_two"
             android:fontFamily="@font/oxygen_regular"
-            android:gravity="center"
             android:text="2Mb"
+            android:layout_marginTop="@dimen/_3sdp"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/download"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/download" />
+            android:textSize="8sp"
+           app:layout_constraintStart_toStartOf="@id/ivUpload"
+            app:layout_constraintEnd_toEndOf="@id/ivUpload"
+            app:layout_constraintTop_toBottomOf="@id/ivUpload"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

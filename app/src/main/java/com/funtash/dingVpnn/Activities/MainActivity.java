@@ -10,18 +10,19 @@ import com.funtash.dingVpnn.R;
 import com.funtash.dingVpnn.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
- ActivityMainBinding binding;
+    ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        Handler handler=new Handler();
+        Handler handler = new Handler();
         handler.postDelayed(() -> {
-            startActivity(new Intent(MainActivity.this,HomeActivity.class));
+            startActivity(new Intent(MainActivity.this, HomeActivity.class));
             finish();
 
-        },2000);
+        }, 2000);
 
 
     }

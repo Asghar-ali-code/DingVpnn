@@ -19,25 +19,24 @@ import com.google.android.material.tabs.TabLayout;
 
 public class HomeActivity extends AppCompatActivity {
 
-ActivityHomeBinding binding;
-HomeAdapter homeAdapter;
-TabLayout tableLayout;
-ViewPager viewPager;
+    ActivityHomeBinding binding;
+    HomeAdapter homeAdapter;
+    TabLayout tableLayout;
+    ViewPager viewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= ActivityHomeBinding.inflate(getLayoutInflater());
+        binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        viewPager=binding.viewPager;
-        tableLayout=binding.tabLayout;
-         homeAdapter = new HomeAdapter(getSupportFragmentManager());
-
-       binding.viewPager.setAdapter(homeAdapter);
-      tableLayout.setupWithViewPager(viewPager);
+        viewPager = binding.viewPager;
+        tableLayout = binding.tabLayout;
+        homeAdapter = new HomeAdapter(getSupportFragmentManager());
+        binding.viewPager.setAdapter(homeAdapter);
+        tableLayout.setupWithViewPager(viewPager);
 
     }
-
 
 
 }

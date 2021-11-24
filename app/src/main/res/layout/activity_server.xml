@@ -35,11 +35,65 @@
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="20sp"
+        android:background="@color/serverbackground"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:layout_editor_absoluteX="26dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:drawableStart="@drawable/smart_connection"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/oxygen_regular"
+            android:gravity="center"
+            android:text="Smart Connect"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:button="@drawable/server_sample_checked"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:id="@+id/iv_checked">
+        </CheckBox>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        android:id="@+id/tvserver"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Servers"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textSize="16sp"
+        android:fontFamily="@font/oxygen_regular" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/tvserver"
         android:id="@+id/server_recycler">
 
     </androidx.recyclerview.widget.RecyclerView>

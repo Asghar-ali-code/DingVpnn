@@ -30,8 +30,8 @@ public class Server extends AppCompatActivity {
         binding.serverRecycler.setLayoutManager(layoutManager);
        model=new ServerModel();
        adapter=new ServerAdapter(this,list);
-       list.add(new ServerModel("Pakistan","","","",""));
-       list.add(new ServerModel("India","","","",""));
+       list.add(new ServerModel("United States","https://cdn-icons-png.flaticon.com/512/206/206626.png","","",""));
+       list.add(new ServerModel("United Kingdom","https://cdn-icons-png.flaticon.com/512/555/555417.png","","",""));
        binding.serverRecycler.setAdapter(adapter);
        adapter.notifyDataSetChanged();
 

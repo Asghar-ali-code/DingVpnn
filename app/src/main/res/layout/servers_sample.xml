@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:background="@color/serverbackground"
         android:layout_marginStart="20dp"
@@ -32,19 +32,19 @@
             android:fontFamily="@font/oxygen_regular"
             android:layout_centerInParent="true"
             android:layout_marginStart="10dp"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
         <CheckBox
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:button="@drawable/server_sample_checked"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:id="@+id/iv_checked">
         </CheckBox>
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerInParent="true"
             android:layout_toStartOf="@id/iv_checked"
             android:src="@drawable/strong_signal"

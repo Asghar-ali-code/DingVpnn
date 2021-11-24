@@ -16,10 +16,8 @@ import com.funtash.dingVpnn.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
-  FragmentHomeBinding binding;
+    FragmentHomeBinding binding;
     View view;
-
-
 
 
     @Override
@@ -32,9 +30,9 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding=FragmentHomeBinding.inflate(getLayoutInflater(), container, false);
-         view=inflater.inflate(R.layout.fragment_home, container, false);
-        view=binding.getRoot();
+        binding = FragmentHomeBinding.inflate(getLayoutInflater(), container, false);
+        view = inflater.inflate(R.layout.fragment_home, container, false);
+        view = binding.getRoot();
 
         binding.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +40,7 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(HomeFragment.this.getActivity(), Server.class));
             }
         });
-         // Inflate the layout for this fragment
+        // Inflate the layout for this fragment
         return view;
     }
 }

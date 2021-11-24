@@ -9,9 +9,9 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/tvTop"
-        android:layout_margin="@dimen/_12sdp"
         android:layout_width="@dimen/_75sdp"
         android:layout_height="30sp"
+        android:layout_margin="@dimen/_12sdp"
         android:src="@drawable/ding_vpn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,13 +20,13 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@null"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toBottomOf="@id/tvTop"
+        app:tabIndicatorColor="@color/OrangeDark"
         app:tabTextAppearance="@style/tab_text"
-        app:tabTextColor="@color/white"
-      app:tabIndicatorColor="@color/OrangeDark"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvTop"/>
+        app:tabTextColor="@color/white" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"

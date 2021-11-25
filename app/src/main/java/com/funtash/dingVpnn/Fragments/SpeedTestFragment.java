@@ -32,12 +32,12 @@ public class SpeedTestFragment extends Fragment {
         binding.btnstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(binding.btnstart.getText().toString().toLowerCase().equals("START")) {
-                    binding.btnstart.setText("STOP");
+                if(binding.btnstart.getText().toString().toLowerCase().equals("Start")) {
+                    binding.btnstart.setText("Stop");
                 }
-                else if(binding.btnstart.getText().toString().toLowerCase().equals("STOP"))
+                else if(binding.btnstart.getText().toString().toLowerCase().equals("Stop"))
                 {
-                    binding.btnstart.setText("START");
+                    binding.btnstart.setText("Start");
                 }
             }
         });

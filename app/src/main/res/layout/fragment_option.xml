@@ -51,7 +51,7 @@
             android:layout_marginStart="10dp"
             android:text="Enable or disable apps"
             android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvspitdetails" />
 
@@ -100,7 +100,7 @@
             android:layout_marginStart="10dp"
             android:text="No Proxy"
             android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvproxydetails" />
 
@@ -149,7 +149,7 @@
             android:layout_marginStart="10dp"
             android:text="English"
             android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvlanguagedetails" />
 

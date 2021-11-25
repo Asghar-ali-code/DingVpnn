@@ -62,7 +62,7 @@
                 android:layout_marginStart="10dp"
                 android:text="Connect Through an HTTP Proxy"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/httpcheck"
@@ -87,7 +87,7 @@
             android:layout_marginTop="10dp"
             android:text="Custom HTTP headers"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -116,7 +116,7 @@
                 android:layout_marginStart="10dp"
                 android:text="Use System network settings"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/systemcheck"
@@ -145,7 +145,7 @@
                 android:layout_marginStart="10dp"
                 android:text="Use the following settings"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/followingcheck"
@@ -173,7 +173,7 @@
             android:layout_marginTop="10dp"
             android:text="Host Address"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -203,7 +203,7 @@
             android:layout_marginTop="10dp"
             android:text="Port"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -231,7 +231,7 @@
                 android:layout_centerVertical="true"
                 android:text="Use proxy authentication"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:layout_marginStart="10dp" />
 
             <CheckBox
@@ -260,7 +260,7 @@
             android:layout_marginTop="10dp"
             android:text="Proxy username"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -290,7 +290,7 @@
             android:layout_marginTop="10dp"
             android:text="Proxy password"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -320,7 +320,7 @@
             android:layout_marginTop="10dp"
             android:text="Proxy domain"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"

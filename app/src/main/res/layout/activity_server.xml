@@ -40,35 +40,41 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginEnd="20sp"
+        android:layout_marginEnd="@dimen/_20sdp"
         android:background="@color/serverbackground"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         tools:layout_editor_absoluteX="26dp">
 
-        <androidx.appcompat.widget.AppCompatTextView
+        <ImageView
+            android:id="@+id/iv_country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/_12sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginBottom="@dimen/_8sdp"
-            android:drawableStart="@drawable/smart_connection"
-            android:drawablePadding="@dimen/_8sdp"
-            android:fontFamily="@font/oxygen_regular"
-            android:gravity="center"
+            android:src="@drawable/smart_connection"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_country"
             android:text="Smart Connect"
-            android:textColor="@color/white" />
+            android:id="@+id/tvcountryName"
+            android:textColor="@color/white"
+            android:fontFamily="@font/oxygen_regular"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:textSize="14sp" />
 
         <CheckBox
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
-            android:layout_centerInParent="true"
             android:button="@drawable/server_sample_checked"
-            android:layout_marginEnd="@dimen/_3sdp"
             android:id="@+id/iv_checked">
         </CheckBox>
 

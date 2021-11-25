@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/mainColor"
     tools:context=".Fragments.HomeFragment">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,8 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
             android:background="@color/serverbackground"
             app:layout_constraintTop_toBottomOf="@id/tvNotConnected"
             tools:layout_editor_absoluteX="26dp">
@@ -65,8 +66,8 @@
             android:id="@+id/linearLayoutCompat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2"
             android:layout_marginBottom="@dimen/_8sdp"
+            android:weightSum="2"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <Button
@@ -78,6 +79,7 @@
                 android:background="@color/serverbackground"
                 android:fontFamily="@font/oxygen_regular"
                 android:text="Start"
+                android:textAllCaps="false"
                 android:textColor="@color/white" />
 
             <Button
@@ -86,6 +88,7 @@
                 android:layout_marginStart="@dimen/_4sdp"
                 android:layout_marginEnd="@dimen/_2sdp"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:background="@color/serverbackground"
                 android:fontFamily="@font/oxygen_regular"
                 android:text="Open Browser"
@@ -96,12 +99,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16sdp"
             android:background="@color/serverbackground"
-            android:gravity="center"
             android:fontFamily="@font/oxygen_regular"
+            android:gravity="center"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_8sdp"
-            android:layout_marginBottom="@dimen/_16sdp"
             android:text="Unlimited speed by Ding"
             android:textColor="@color/openBrow"
             app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat" />

@@ -40,7 +40,7 @@
             android:layout_marginStart="10dp"
             android:text="Spit Tunneling"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvspit" />
         <TextView
@@ -51,7 +51,7 @@
             android:layout_marginStart="10dp"
             android:text="Enable or disable apps"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="10sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvspitdetails" />
 
@@ -89,7 +89,7 @@
             android:layout_marginStart="10dp"
             android:text="Proxy Settings"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvproxy" />
         <TextView
@@ -100,7 +100,7 @@
             android:layout_marginStart="10dp"
             android:text="No Proxy"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="10sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvproxydetails" />
 
@@ -138,7 +138,7 @@
             android:layout_marginStart="10dp"
             android:text="Language"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvlanguage" />
         <TextView
@@ -149,7 +149,7 @@
             android:layout_marginStart="10dp"
             android:text="English"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="10sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvlanguagedetails" />
 
@@ -188,7 +188,7 @@
             android:text="Feedback"
             android:layout_centerVertical="true"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvfeedback" />
 
@@ -220,7 +220,7 @@
             android:text="Rate us"
             android:layout_centerVertical="true"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvrate" />
     </RelativeLayout>
@@ -249,7 +249,7 @@
             android:text="About"
             android:layout_centerVertical="true"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:fontFamily="@font/oxygen_regular"
             android:id="@+id/tvabout" />
 

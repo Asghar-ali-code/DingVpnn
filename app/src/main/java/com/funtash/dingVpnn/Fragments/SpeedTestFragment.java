@@ -15,7 +15,6 @@ import com.funtash.dingVpnn.databinding.FragmentSpeedTestBinding;
 public class SpeedTestFragment extends Fragment {
     View view;
     FragmentSpeedTestBinding binding;
-    String text="START";
 
 
     @Override
@@ -33,14 +32,12 @@ public class SpeedTestFragment extends Fragment {
         binding.btnstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(text.equals("START")) {
+                if(binding.btnstart.getText().toString().equals("START")) {
                     binding.btnstart.setText("STOP");
-                    text.equals("STOP");
                 }
-                else if(text.equals("STOP"))
+                else if(binding.btnstart.getText().toString().equals("STOP"))
                 {
                     binding.btnstart.setText("START");
-                    text.equals("START");
                 }
             }
         });

@@ -44,6 +44,8 @@ public class HomeFragment extends Fragment {
             binding.tvNotConnected.setTextColor(Color.parseColor("#db4e2d"));
             binding.tvTime.setVisibility(View.VISIBLE);
         });
+
+
         // Inflate the layout for this fragment
         return view;
     }

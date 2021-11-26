@@ -3,8 +3,8 @@
     <corners android:radius="@dimen/_20sdp" />
     <stroke android:width="2dp"
         android:color="@color/OrangeDark"></stroke>
-    <size android:width="30dp"
-        android:height="30dp">
+    <size android:width="20dp"
+        android:height="20dp">
 
     </size>
 </shape>

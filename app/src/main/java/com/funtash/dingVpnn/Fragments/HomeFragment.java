@@ -1,6 +1,8 @@
 package com.funtash.dingVpnn.Fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -27,6 +29,7 @@ public class HomeFragment extends Fragment {
 
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -34,11 +37,12 @@ public class HomeFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_home, container, false);
         view = binding.getRoot();
 
-        binding.relativeLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeFragment.this.getActivity(), Server.class));
-            }
+        binding.relativeLayout.setOnClickListener(view -> startActivity(new Intent(HomeFragment.this.getActivity(), Server.class)));
+        binding.btnStart.setOnClickListener(view->{
+            binding.btnStart.setText("Stop");
+          //  binding.btnStart.setTextColor(getColor);
+           // binding.tvNotConnected.setTextColor(R.color.OrangeDark);
+            binding.tvTime.setVisibility(View.VISIBLE);
         });
 
 

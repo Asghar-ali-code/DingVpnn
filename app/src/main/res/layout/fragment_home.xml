@@ -79,6 +79,7 @@
                 android:background="@color/serverbackground"
                 android:fontFamily="@font/oxygen_regular"
                 android:text="Start"
+                android:id="@+id/btnstart"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 

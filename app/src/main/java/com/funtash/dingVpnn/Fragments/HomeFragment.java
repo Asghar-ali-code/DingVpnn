@@ -40,6 +40,8 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(HomeFragment.this.getActivity(), Server.class));
             }
         });
+
+
         // Inflate the layout for this fragment
         return view;
     }

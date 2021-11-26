@@ -40,6 +40,8 @@ public class HomeFragment extends Fragment {
         binding.relativeLayout.setOnClickListener(view -> startActivity(new Intent(HomeFragment.this.getActivity(), Server.class)));
         binding.btnStart.setOnClickListener(view->{
             binding.btnStart.setText("Stop");
+            disconnect_fragment disconnectFragment=new disconnect_fragment();
+            disconnectFragment.show(getFragmentManager(),disconnectFragment.getTag());
            binding.btnStart.setTextColor(Color.parseColor("#db4e2d"));
             binding.tvNotConnected.setTextColor(Color.parseColor("#db4e2d"));
             binding.tvTime.setVisibility(View.VISIBLE);

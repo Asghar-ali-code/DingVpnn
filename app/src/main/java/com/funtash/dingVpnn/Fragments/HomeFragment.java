@@ -1,6 +1,6 @@
 package com.funtash.dingVpnn.Fragments;
 
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -40,8 +40,8 @@ public class HomeFragment extends Fragment {
         binding.relativeLayout.setOnClickListener(view -> startActivity(new Intent(HomeFragment.this.getActivity(), Server.class)));
         binding.btnStart.setOnClickListener(view->{
             binding.btnStart.setText("Stop");
-          //  binding.btnStart.setTextColor(getColor);
-           // binding.tvNotConnected.setTextColor(R.color.OrangeDark);
+           binding.btnStart.setTextColor(Color.parseColor("#db4e2d"));
+            binding.tvNotConnected.setTextColor(Color.parseColor("#db4e2d"));
             binding.tvTime.setVisibility(View.VISIBLE);
         });
         // Inflate the layout for this fragment

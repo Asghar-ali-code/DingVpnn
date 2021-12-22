@@ -76,14 +76,15 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:id="@+id/download_parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/download_parent"
+            android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@id/tv_unlimitedSpeed"
             app:layout_constraintStart_toStartOf="parent">
         <RelativeLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:id="@+id/Rl_download"
             android:layout_centerVertical="true"
             android:background="@drawable/icon_background"
@@ -91,54 +92,58 @@
             android:layout_marginStart="20dp">
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
                 android:id="@+id/ivdownload"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_centerInParent="true"
                 android:src="@drawable/ic_download" />
         </RelativeLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/Rl_download"
-            android:text="105.30 Mbps"
-            android:layout_marginStart="10dp"
-            android:textColor="@color/white" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            app:layout_constraintBottom_toTopOf="@id/tv_unlimitedSpeed"
-            app:layout_constraintEnd_toEndOf="parent">
-            <RelativeLayout
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:id="@+id/Rl_upload"
-                android:layout_toRightOf="@id/tvuploadspeed"
-                android:layout_centerVertical="true"
-                android:background="@drawable/icon_background"
-                android:layout_marginBottom="20dp"
-                android:layout_marginStart="20dp">
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:id="@+id/ivupload"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/upload" />
-            </RelativeLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_toRightOf="@id/Rl_download"
                 android:text="105.30 Mbps"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Rl_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/tv_unlimitedSpeed"
+            app:layout_constraintEnd_toEndOf="parent">
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_toRightOf="@id/tvuploadspeed"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_background"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/ivupload"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/upload" />
+            </RelativeLayout>
+
+            <TextView
                 android:id="@+id/tvuploadspeed"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/white" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:text="105.30 Mbps"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -163,6 +168,7 @@
                 android:textColor="@color/white" />
 
             <Button
+                android:id="@+id/btnBrowser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_4sdp"
@@ -178,16 +184,17 @@
 
 
         <TextView
+
+            android:id="@+id/tv_unlimitedSpeed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_16sdp"
             android:background="@color/serverbackground"
             android:fontFamily="@font/oxygen_regular"
             android:gravity="center"
-            android:id="@+id/tv_unlimitedSpeed"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_8sdp"
-            android:text="Unlimited speed by Ding"
+            android:text="Unlimited speed by Ding Vpn"
             android:textColor="@color/openBrow"
             app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat" />
     </androidx.constraintlayout.widget.ConstraintLayout>
